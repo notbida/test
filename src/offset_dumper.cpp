@@ -12,6 +12,8 @@ OffsetDumper::OffsetDumper(uint64_t baseAddress)
     : m_baseAddress(baseAddress), m_initialized(false) {
 }
 
+OffsetDumper::~OffsetDumper() = default;
+
 bool OffsetDumper::Initialize(std::unique_ptr<IMemoryReader> memory) {
     m_memory = std::move(memory);
 

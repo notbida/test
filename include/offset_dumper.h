@@ -58,6 +58,7 @@ private:
 
 public:
     OffsetDumper(uint64_t baseAddress = 0x140000000);
+    ~OffsetDumper();
 
     /**
      * Initialize with memory reader
